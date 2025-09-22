@@ -45,6 +45,12 @@ import AddNurse from "./pages/Admin/AddNurse";
 import Bookings from "./pages/Admin/Bookings";
 import AdminMessages from "./pages/Admin/Messages"
 import UsersMessages from "./pages/Admin/UsersMessages";
+import LoginPage from "./pages/User/Login";
+import CarelinkAssistantPage from "./pages/User/CarelinkAssistant";
+import PharmacyPage from "./pages/User/Pharmacy";
+import ShoppingPage from "./pages/User/Shopping";
+
+
 
 const queryClient = new QueryClient();
 
@@ -59,6 +65,7 @@ const App = () => (
             richColors
             duration={4000}
             toastOptions={{ className: "toast" }}
+            closeButton
           />
           <Routes>
             {/* Landing pages */}
@@ -81,6 +88,10 @@ const App = () => (
               <Route path="/contact" element={<ContactUs />} />
               <Route path="/booking-form" element={<BookingForm />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/login-page" element={<LoginPage />} />
+              <Route path="/carelink-assistant" element={<CarelinkAssistantPage />} />
+              <Route path="/pharmacy" element={<PharmacyPage />} />
+              <Route path="/shopping" element={<ShoppingPage />} />
 
             </Route>
 

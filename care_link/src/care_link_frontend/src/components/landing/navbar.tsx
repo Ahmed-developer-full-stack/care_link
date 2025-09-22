@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { LogoutDialog } from "@/components/LogoutDialog";
 import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner"
-
+import { ShoppingBag } from "lucide-react"
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogoutDialog, setShowLogoutDialog] = useState(false);
@@ -25,6 +25,7 @@ export function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
+    { name: "Pharmacy", href: "/pharmacy" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
@@ -65,6 +66,10 @@ export function Navbar() {
                   Logout
                 </Button>
               )}
+
+              <div className="cursor-pointer" onClick={() => navigate("/shopping")}>
+                <ShoppingBag h-8 w-8 />
+              </div>
             </div>
 
             {/* Mobile */}
