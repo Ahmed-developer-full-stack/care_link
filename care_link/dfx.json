@@ -18,6 +18,12 @@
         "npm install --prefix src/care_link_frontend",
         "npm run build --prefix src/care_link_frontend"
       ]
+    },
+    "booking": {
+      "type": "rust",
+      "main": "src/care_link_backend/booking/Cargo.toml",
+      "candid": "src/care_link_backend/booking/booking.did",
+      "package": "booking"
     }
   },
   "networks": {

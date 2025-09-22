@@ -37,11 +37,11 @@ export function Navbar() {
         transition={{ duration: 0.5 }}
         className="bg-background/95 backdrop-blur border-b border-border sticky top-0 z-50"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate("/")}>
               <img src={carelinkLogo} alt="CareLink Logo" className="h-10 w-8" />
-              <span className="text-xl font-semibold italic">CareLink</span>
+              <span className="text-xl font-semibold text-gradient-primary">CareLink</span>
             </div>
 
             {/* Desktop */}
